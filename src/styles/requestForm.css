@@ -1,0 +1,14 @@
+.field {
+  display:flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.requestForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.select {
+  width: 100%;
+}

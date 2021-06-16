@@ -1,0 +1,24 @@
+{
+  "requests": [
+    {
+      "studentName": "Lynn",
+      "email": "lynn.samuelson@gmail.com",
+      "selectedInstrument": "Banjo",
+      "date": null,
+      "id": 1
+    },
+    {
+      "studentName": "Sydney",
+      "email": "sydney@test.com",
+      "selectedInstrument": "Theremin",
+      "date": "2021-06-20",
+      "id": 2
+    }
+  ],
+  "monkey": [
+    {
+      "name": "Fred",
+      "species": "Rat"
+    }
+  ]
+}
