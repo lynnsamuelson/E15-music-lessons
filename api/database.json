@@ -13,12 +13,27 @@
       "selectedInstrument": "Theremin",
       "date": "2021-06-20",
       "id": 2
-    }
-  ],
-  "monkey": [
+    },
     {
-      "name": "Fred",
-      "species": "Rat"
+      "studentName": "Sydney ",
+      "email": "tootsie@gmail.com",
+      "selectedInstrument": "Banjo",
+      "date": "2021-10-30",
+      "id": 3
+    },
+    {
+      "studentName": "Sydney ",
+      "email": "tootsie@gmail.com",
+      "selectedInstrument": "Banjo",
+      "date": "2021-10-30",
+      "id": 4
+    },
+    {
+      "studentName": "Sydney ",
+      "email": "tootsie@gmail.com",
+      "selectedInstrument": "Banjo",
+      "date": "2021-10-30",
+      "id": 5
     }
   ]
 }
