@@ -1,4 +1,5 @@
 import {RequestForm} from './RequestForm.js'
+import {requestList} from './Requests.js'
 //inport Requests
 
 //event listener for the button click
@@ -12,7 +13,7 @@ export const MusicLessons = () => {
 
       <section class="lessonRequests">
           <h2>Lesson Requests</h2>
-//Add Requests
+            ${requestList()}
       </section>
   `
 }

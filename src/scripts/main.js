@@ -1,10 +1,15 @@
 import { MusicLessons } from "./MusicLessons.js"
+import { getAllLessonRequests } from "./dataAccess.js"
 
 
 const mainContainer = document.querySelector("#container")
 
 const render = () => {
-  mainContainer.innerHTML = MusicLessons()
+  getAllLessonRequests().then(
+    () => {
+      mainContainer.innerHTML = MusicLessons()
+    }
+  )
 }
 
 render()
