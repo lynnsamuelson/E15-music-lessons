@@ -21,23 +21,30 @@ export const sendLessonRequest = (lessonRequest) => {
   }
 
   return fetch(`${API}/requests`, fetchOptions)
-  .then(response => response.json())
-  .then(() => {
-    mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
-  })
-
+    .then(response => response.json())
+    .then(() => {
+      mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
+    })
 }
 
 export const getAllLessonRequests = () => {
-
   return fetch(`${API}/requests`)
   .then(response => response.json())
   .then( serviceRequests => {
     applicationState.requests = serviceRequests
   })
-
 }
 
 export const getRequests = () => {
   return applicationState.requests.map(request => ({...request}))
+}
+
+export const deleteLessonRequest = (lessonId) => {
+  const deleteURL = `${API}/requests/${lessonId}`
+
+  return fetch(deleteURL, { method: 'DELETE' })
+    .then(response => response.json())
+    .then(() => {
+      mainContainer.dispatchEvent(new CustomEvent('stateChanged'))
+    })
 }
